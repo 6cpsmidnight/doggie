@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&family=Edu+TAS+Beginner&family=Underdog&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/external-code/index.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="loading">
+        <p>Loading</p>
+    </div>
+
+    <div class="content">
+        <div class="header-div">
+            <h1 class="header">Find Your Potential Dog Breed</h1>
+        </div>
+
+        <div class="filter">
+            <label for="weight">Weight</label>
+            <select name="Weight" id="weight">
+                <option value="weight-all" selected>All</option>
+                <option value="weight-small">Small(0-25 lbs)</option>
+                <option value="weight-medium">Medium(26-60 lbs)</option>
+                <option value="weight-large">Large(61+ lbs)</option>
+                </option>
+            </select>
+            <!-- <label for="age">Height</label>
+            <select name="Height" id="height">
+                <option value="height-all">All</option>
+                <option value="height-young">Young</option>
+                <option value="height-adult">Adult</option>
+                <option value="height-senior">Senior</option>
+            </select> --->
+
+            <label for="life-span">Life Span</label>
+            <select name="Life Span" id="life-span">
+                <option value="life-span-all" selected>All</option>
+                <option value="life-span-0-to-10">0-10</option>
+                <option value="life-span-11-to-14">11-14</option>
+                <option value="life-span-15-plus">15+</option>
+            </select>
+        </div>
+
+        <div id="dogs" class="dogs">
+            <!-- <div class="dog weight-all age-all gender-all weight-medium age-adult gender-male">
+                <a href="#">
+                    <img id="dog" class="dog-img dog-img1">
+                    <p>Sisco</p>
+                </a>
+            </div>
+            <div class="dog size-all age-all gender-all size-small age-young gender-male">
+                <a href="#">
+                    <img id="dog2"
+                        src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/54982123/1/?bust=1647349413&width=450"
+                        class="dog-img" alt="dog-red">
+                    <p>Red</p>
+                </a>
+            </div>
+            <div class="dog size-all age-all gender-all size-small age-young gender-male">
+                <a href="#">
+                    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55650847/1/?bust=1657757847&width=450"
+                        class="dog-img" alt="dog-bentley">
+                    <p>Bentley</p>
+                </a>
+            </div>
+            <div class="dog size-all age-all gender-all size-small age-senior gender-male">
+                <a href="#">
+                    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55900940/1/?bust=1657757922&width=450"
+                        class="dog-img" alt="dog-tarzan">
+                    <p>Tarzan</p>
+                </a>
+            </div>
+            <div class="dog size-all age-all gender-all size-small age-young gender-male">
+                <a href="#">
+                    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/56188685/1/?bust=1656954801&width=450"
+                        class="dog-img" alt="dog-ping">
+                    <p>Ping</p>
+                </a>
+            </div>
+            <div class="dog size-all age-all gender-all size-small age-young gender-male">
+                <a href="#">
+                    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/56210987/1/?bust=1657124351&width=450"
+                        class="dog-img" alt="parks-dog">
+                    <p>Parks</p>
+                </a>
+            </div>
+            <div class="dog size-all age-all gender-all size-small age-senior gender-male">
+                <a href="#">
+                    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/56269548/1/?bust=1657507370&width=450"
+                        class="dog-img" alt="dog-max">
+                    <p>Max</p>
+                </a>
+            </div>
+            <div class="dog size-all age-all gender-all size-small age-adult gender-male">
+                <a href="#">
+                    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/50863229/1/?bust=1657388078&width=450"
+                        class="dog-img" alt="dog=mater">
+                    <p>Mater</p>
+                </a>
+            </div>
+            <div class="dog size-all age-all gender-all size-small age-adult gender-male">
+                <a href="#">
+                    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/56184654/1/?bust=1657554490&width=450"
+                        class="dog-img" alt="dog-pierre">
+                    <p>Pierre</p>
+                </a>
+            </div>
+            <div class="dog size-all age-all gender-all size-small age-adult gender-male">
+                <a href="#">
+                    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/53112483/4/?bust=1632848320&width=450"
+                        class="dog-img" alt="dog-beethoven_-_see_flacka">
+                    <p>Beethoven - See Flacka</p>
+                </a>
+            </div>
+            <div class="dog size-all age-all gender-all size-small age-young gender-male">
+                <a href="#">
+                    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/48271526/1/?bust=1592611814&width=450"
+                        class="dog-img" alt="dog-babe">
+                    <p>Babe</p>
+                </a>
+            </div>
+            <div class="dog size-all age-all gender-all size-small age-adult gender-male">
+                <a href="#">
+                    <img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55337591/1/?bust=1650353337&width=450"
+                        class="dog-img" alt="dog-beau">
+                    <p>Beau</p>
+                </a>
+            </div> -->
+        </div>
+    </div>
+
+</body>
+
+<!-- JavaScript -->
+<script src="/external-code/index.min.js"></script>
+
+</html>

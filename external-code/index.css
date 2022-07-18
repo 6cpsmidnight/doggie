@@ -1,0 +1,131 @@
+/* Everything */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Loading */
+#loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #F8B400;
+}
+
+/* Content */
+.content {
+    padding-top: 2rem;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    z-index: 1;
+    background-color: #fff;
+}
+
+/* Header Div */
+.header-div {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin-bottom: 0.5rem;
+}
+
+.header {
+    font-size: 3rem;
+    font-family: 'Underdog', cursive;
+    color: #F8B400;
+}
+
+/* Filter */
+.filter {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.filter,
+.filter form,
+.filter label,
+.filter select,
+.filter option,
+.filter input {
+    font-size: 1.35rem;
+    font-family: 'Comic Neue', cursive;
+}
+
+/* Dogs */
+.dogs {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Albert Sans', sans-serif;
+    overflow: hidden;
+}
+
+.dog {
+    margin: 2.5%;
+    overflow: hidden;
+    max-width: 240px;
+    font-size: 1.4rem;
+}
+
+.dog-img {
+    max-width: 240px;
+    max-height: 240px;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+}
+
+.dog a {
+    text-decoration: none;
+}
+
+.dog p {
+    text-align: center;
+}
+
+.dog-name {
+    font-size: 2rem;
+    color: #F8B400;
+}
+
+.seperator {
+    color: #808080;
+}
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .header {
+        font-size: 2.1rem;
+    }
+
+    /* Filter */
+    .filter,
+    .filter form,
+    .filter label,
+    .filter select,
+    .filter option,
+    .filter input {
+        font-size: 1.2rem;
+    }
+
+    /* Dogs */
+    .dog {
+        font-size: 1.1rem;
+        max-width: 200px;
+    }
+
+    .dog-img {
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .dog-name {
+        font-size: 1.5rem;
+    }
+}
